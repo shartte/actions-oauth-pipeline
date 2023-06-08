@@ -1,0 +1,13 @@
+service: actions-oauth-lambda
+
+frameworkVersion: "3"
+
+provider:
+  name: aws
+  runtime: nodejs18.x
+  region: eu-central-1
+
+functions:
+  hello:
+    handler: handler.token
+    url: true
